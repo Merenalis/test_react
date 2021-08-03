@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import '../test/Ccomponent.css';
+import "../styles/Switch.css";
 import FirstAccord from "../components/accords/FirstAccord";
 import SecAccord from "../components/accords/SecAccord";
 
