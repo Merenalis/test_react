@@ -1,14 +1,14 @@
-import React, {useState}from 'react';
+import React, {useState} from 'react';
 import Accordion1 from "./Accordion1";
-import Data from "../data/Data";
 import Accordion2 from "./Accordion2";
+import data from '../data/Data'
+
 function AccordMain(props) {
-    const [isOpened, setOpened]=useState(null);
-    const data = new Data();
-    const toggleAccordionOpened = (accordion)=>{
-        if (isOpened===accordion){
+    const [isOpened, setOpened] = useState(null);
+    const toggleAccordionOpened = (accordion) => {
+        if (isOpened === accordion) {
             setOpened(null)
-        }else{
+        } else {
             setOpened(accordion)
         }
     }
@@ -17,7 +17,7 @@ function AccordMain(props) {
             {
                 props.state ? <div>
                     {
-                        data.data.map((data)=>(
+                        data.map((data) => (
                             <Accordion1
                                 isOpened={isOpened}
                                 setOpened={toggleAccordionOpened}
@@ -26,9 +26,9 @@ function AccordMain(props) {
                             />
                         ))
                     }
-                </div>: <div>
+                </div> : <div>
                     {
-                        data.data.map((data)=>(
+                        data.map((data) => (
                             <Accordion2
                                 title={data.title}
                                 content={data.content}
@@ -38,8 +38,6 @@ function AccordMain(props) {
                     }
                 </div>
             }
-
-
         </div>
 
     );

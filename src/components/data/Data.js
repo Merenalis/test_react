@@ -1,5 +1,5 @@
-export default class Data {
-     data = [
+
+  const data = [
         {
             title: 'Question 1',
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et '
@@ -14,4 +14,4 @@ export default class Data {
                 'dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ali Ut enim ad minim veniam, quis nostrud exercitation' +
                 ' ullamco laboris nisi ut ali Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ali'
         },]
-}
+export default data;
