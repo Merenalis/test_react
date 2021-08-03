@@ -1,7 +1,7 @@
 import React, {Component} from "react";
-import './test/Ccomponent.css';
-import FirstAccord from "../accords/FirstAccord";
-import SecAccord from "../accords/SecAccord";
+import '../test/Ccomponent.css';
+import FirstAccord from "../components/accords/FirstAccord";
+import SecAccord from "../components/accords/SecAccord";
 
 export default class SwitchComp extends Component {
 

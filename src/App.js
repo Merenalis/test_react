@@ -1,8 +1,8 @@
-import './App.css';
+import './styles/App.css';
 
 import React from "react";
 
-import SwitchComp from "./SwitchComp";
+import SwitchComp from "./components/SwitchComp";
 
 
 function App() {
