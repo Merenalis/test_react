@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import "../styles/Switch.css";
-
 import AccordMain from "./accords/AccordMain";
 
 export default class SwitchComp extends Component {
@@ -15,14 +14,11 @@ export default class SwitchComp extends Component {
     handleClick() {
         this.setState(state => ({
             click: !state.click
-
         }));
     }
     render() {
-        return (<div>
-         <div>
-             <AccordMain state={this.state.click}/>
-        </div>
+        return (<div>         
+             <AccordMain state={this.state.click}/>        
                 <div className="switch-main">
                     <div className="switch-main__switch-text">
                         <span>1-st type</span>
